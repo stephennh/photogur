@@ -1,8 +1,9 @@
 <h1> Edit Picture </h1>
 
-<%= link_to "Back", @picture %>
+<div class="buttons"><%= link_to "Back", @picture %></div>
 
 <%= form_for @picture do |f| %>
+<div class="edit">
   <div>
     <%= f.label :artist %>
     <%= f.text_field :artist %>
@@ -15,6 +16,7 @@
     <%= f.label :url %>
     <%= f.text_field :url %>
   </div>
+</div>
   <p>
     <%= f.submit "Save" %>
   </p>
