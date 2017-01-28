@@ -1,8 +1,8 @@
 <h1>Pictures</h1>
 
-<p class="new"><%= link_to "New Picture", "/pictures/new" %><p>
+<p class="new"><%= link_to "Add a New Picture", "/pictures/new" %><p>
 
 <% @pictures.each do |picture| %>
-  <p><%= picture.title %>, <%= picture.artist%></p>
+  <p class="title_artist"><%= picture.title %>, <%= picture.artist%></p>
   <a href="pictures/<%= picture.id %>"><img src="<%= picture.url %>"></a>
 <% end %>
