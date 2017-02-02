@@ -17,6 +17,22 @@
    box-sizing: border-box;
  }
 
+ body {
+   margin: 0;
+ }
+
+ .footer {
+   background-color: black;
+   color: white;
+   font-weight: lighter;
+   font-family: sans-serif;
+   text-align: center;
+   margin: 20px 0 0;
+   height: 40px;
+   line-height: 40px;
+   bottom: 0;
+   width: 100%
+ }
 
 h1 {
   text-align: center;
